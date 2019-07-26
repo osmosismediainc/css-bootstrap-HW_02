@@ -17,14 +17,14 @@
         </button>  
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
+            <li class="nav-item">
               <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="portfolio.html">Portfolio</a>
             </li>
             <li class="nav-item">
-                    <a class="nav-link" href="contact.html">Contact</a>
+                    <a class="nav-link active" href="contact.html">Contact</a>
                   </li>
           </ul>
         </div>
@@ -35,12 +35,31 @@
                 <!-- Card, It's a cheat, but it works!-->
                     <div class="card" style="width: 100%;">
                         <div class="card-body">  
-                            <!--This is the area that swaps out per page fopr content-->
-                            <h1>About Me</h1>
+                            <!--This is the area that swaps out per page for content-->
+                            <h1>Contact</h1>
                             <hr />
-                            <img src="assets/images/about/daniel_goldman_headshot.jpg" class="thumbnail float-left mr-15px headshot" width="150 px"> 
-                            <p>Nullam id dolor id nibh ultricies vehicula ut id elit. Sed posuere consectetur est at lobortis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Cras justo odio, dapibus ac facilisis in, egestas eget quam.</p>
-                            <p>Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Cras mattis consectetur purus sit amet fermentum. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Nullam quis risus eget urna mollis ornare vel eu leo.</p>
+                            <!-- This is a placeholder form that is not hooked up to anything and therefore is non-functional-->
+                            <div class="alert alert-warning" role="alert">
+                              This is a non-functional form
+                            </div>
+                            <form>
+                              <div class="form-group">
+                                <label for="exampleInputEmail1">Email address</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                              </div>
+                              <div class="form-group">
+                                <label for="exampleInputEName">Name</label>
+                                <input type="text" class="form-control" aria-describedby="nameHelp" placeholder="Your Name">
+                                <small id="nameHelp" class="form-text text-muted">We'll never share your name with anyone else.</small>
+                              </div>
+                              <div class="form-group">
+                                <label for="exampleFormControlTextarea1">Comments</label>
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                              </div>
+                              <button type="submit" class="btn btn-danger disabled">Submit</button>
+                            </form>
+                            
                             <!-- End Content Area -->    
                         </div>
                     </div>
